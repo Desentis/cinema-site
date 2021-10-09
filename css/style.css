@@ -1,16 +1,21 @@
 body {
   background: #621402;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   max-width: 1170px;
   margin: auto;
 }
 .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url("../img/bg.jpg") no-repeat center top / cover;
+}
+.navbar {
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .menu {
   list-style-type: none;
