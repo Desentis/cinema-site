@@ -160,3 +160,60 @@ body {
 .option {
   background: rgba(98, 20, 2, 0.9);
 }
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin-top: 63px;
+  margin-bottom: 40px;
+}
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+}
+.scheme path:not(.light):hover {
+  cursor: pointer;
+  fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.active,
+.scheme path.active:hover {
+  cursor: pointer;
+  fill: #FE8E05;
+}
+.scheme path.booked,
+.scheme path.booked:hover {
+  cursor: not-allowed;
+  fill: rgba(255, 255, 255, 0.05);
+}
+.legend {
+  display: flex;
+  align-items: center;
+  border-top: solid rgba(255, 255, 255, 0.5);
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 38px;
+}
+.legend-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.legend-active {
+  color: #FE8E05;
+}
+.legend svg {
+  margin-right: 15px;
+}
+.legend path,
+.legend path:hover {
+  cursor: default!important;
+  fill: rgba(255, 255, 255, 0.2)!important;
+}
+.legend path.active,
+.legend path.active:hover{
+  fill: #FE8E05!important;
+}
+.legend path.booked,
+.legend path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05)!important;
+}
