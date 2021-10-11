@@ -161,25 +161,27 @@ body {
   background: rgba(98, 20, 2, 0.9);
 }
 .scheme {
+}
+.scheme-svg {
   background: rgba(36, 36, 36, 0.18);
   border-radius: 10px;
   margin-top: 63px;
   margin-bottom: 40px;
 }
-.scheme path:not(.light) {
+.scheme-svg path.seat {
   fill: rgba(255, 255, 255, 0.2);
 }
-.scheme path:not(.light):hover {
+.scheme-svg path.seat:hover {
   cursor: pointer;
   fill: rgba(255, 255, 255, 0.5);
 }
-.scheme path.active,
-.scheme path.active:hover {
+.scheme-svg path.seat.active,
+.scheme-svg path.seat.active:hover {
   cursor: pointer;
-  fill: #FE8E05;
+  fill: #fe8e05;
 }
-.scheme path.booked,
-.scheme path.booked:hover {
+.scheme-svg path.seat.booked,
+.scheme-svg path.seat.booked:hover {
   cursor: not-allowed;
   fill: rgba(255, 255, 255, 0.05);
 }
@@ -198,22 +200,49 @@ body {
   margin-right: 30px;
   color: rgba(255, 255, 255, 0.5);
 }
-.legend-active {
-  color: #FE8E05;
-}
 .legend svg {
   margin-right: 15px;
 }
-.legend path,
-.legend path:hover {
-  cursor: default!important;
-  fill: rgba(255, 255, 255, 0.2)!important;
+.legend path {
+  fill: rgba(255, 255, 255, 0.2);
 }
-.legend path.active,
-.legend path.active:hover{
-  fill: #FE8E05!important;
+.legend-active,
+.legend path.active {
+  color: #fe8e05;
+  fill: #fe8e05;
 }
-.legend path.booked,
-.legend path.booked:hover {
-  fill: rgba(255, 255, 255, 0.05)!important;
+.legend path.booked {
+  fill: rgba(255, 255, 255, 0.05);
+}
+.price {
+  padding-top: 20px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-label {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price-total {
+  font-size: 52px;
+  line-height: 61px;
+}
+.rubble {
+  font-size: 52px;
+  line-height: 61px;
+  margin-left: 12px;
+}
+.button {
+  display: block;
+  background: #fe8e05;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 24px 52px;
+  text-decoration: none;
 }
